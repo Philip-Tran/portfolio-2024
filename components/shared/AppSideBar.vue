@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { mainMenu } from "~/lib/menus"
 import { BadgeCheck, Calendar, ChevronDown, ChevronsUpDown, Home, Inbox, LogOut, PenLine, Search, Settings, Sparkles } from "lucide-vue-next"
 
 import {
@@ -46,50 +47,27 @@ const handleLogout = async () => {
 </script>
 
 <template>
-    <Sidebar class="bg-gray-900 text-slate-50">
-        <SidebarHeader>
-            <SidebarMenu>
+    <Sidebar class="bg-dark text-text border-r-text border-opacity-30 ">
+        <SidebarHeader class="p-0">
+            <SidebarMenu class="border-b-[0.2px] border-opacity-40 border-text ">
                 <SidebarMenuItem>
-                    <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                            <SidebarMenuButton>
-                                Q Writes
-                                <ChevronDown class="ml-auto" />
-                            </SidebarMenuButton>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent class="w-[--radix-popper-anchor-width]">
-                            <DropdownMenuItem>
-                                <span>Tech Blog</span>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>
-                                <span>Personal</span>
-                            </DropdownMenuItem>
-                        </DropdownMenuContent>
-                    </DropdownMenu>
+                    <div class="min-h-32 py-6 xl:py-8 xl:px-8 px-5">
+                        <h3 class="text-white text-2xl mb-1">Phil Tran</h3>
+                        <p>Web Developer</p>
+                    </div>
                 </SidebarMenuItem>
             </SidebarMenu>
-            <div class="mt-7 flex flex-col space-y-2 lg:space-y-3
-            ">
-                <NuxtLink to="/">
-                    <Button class="w-full text-slate-600" variant="outline">Visit Site</Button>
-                </NuxtLink>
-                <NuxtLink to="/dashboard/create-post">
-                    <Button class="w-full bg-yellow-500 text-slate-900 hover:bg-yellow-600" variant="default">New
-                        Post
-                    </Button>
-                </NuxtLink>
-            </div>
         </SidebarHeader>
         <SidebarContent>
-            <SidebarGroup>
-                <SidebarGroupLabel>Main</SidebarGroupLabel>
+            <SidebarGroup class="p-0">
                 <SidebarGroupContent>
                     <SidebarMenu>
-                        <SidebarMenuItem v-for="item in items" :key="item.title" class="">
-                            <SidebarMenuButton asChild class="min-h-10">
-                                <NuxtLink :to="item.url">
+                        <SidebarMenuItem v-for="item in mainMenu" :key="item.label" class="rounded-none">
+                            <SidebarMenuButton asChild class="min-h-10 rounded-none">
+                                <NuxtLink :to="item.url"
+                                    class="flex items-center justify-start min-h-16 space-x-3 px-7 py-5 border-b-[0.2px] border-text border-opacity-45">
                                     <component :is="item.icon" />
-                                    <span>{{ item.title }}</span>
+                                    <span class="text-lg">{{ item.label }}</span>
                                 </NuxtLink>
                             </SidebarMenuButton>
                         </SidebarMenuItem>

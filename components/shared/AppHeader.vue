@@ -2,7 +2,7 @@
 import { mainMenu } from '~/lib/menus';
 import { CircleX, Menu } from 'lucide-vue-next';
 
-const isMenuOpen = ref<boolean>(true)
+const isMenuOpen = ref<boolean>(false)
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value

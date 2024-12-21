@@ -6,7 +6,7 @@ import { homePage } from '~/lib/content';
 
 <template>
     <SharedAppSection>
-        <div class="space-y-5">
+        <div class="space-y-5 lg:space-y-6 xl:space-y-10 2xl:space-y-12 ">
             <div class="flex justify-between items-start">
                 <div class="w-32 h-32 rounded-md">
                     <NuxtImg :src="homePage.image.url" :alt="homePage.image.altText" height="150px" width="150px"
@@ -18,11 +18,11 @@ import { homePage } from '~/lib/content';
                     </div>
                 </div>
             </div>
-            <div class="space-y-4">
-                <h1 class="text-3xl xl:text-4xl 2xl:text-5xl font-sans font-medium">
+            <div class="space-y-4 ">
+                <h1 class="text-3xl xl:text-4xl  font-sans font-medium max-w-[600px]">
                     {{ homePage.headline }}
                 </h1>
-                <p class="text-text">
+                <p class="text-text font-base xl:font-lg max-w-[630px]">
 
                     {{ homePage.sub_headline }}
                 </p>
@@ -40,9 +40,10 @@ import { homePage } from '~/lib/content';
             </div>
         </div>
     </SharedAppSection>
-    <SharedAppSection title="Work">
-        <div class="flex flex-col space-y-8">
-            <SharedProjectCard v-for="i in 3" />
+    <SharedAppSection title="Projects">
+        <div
+            class="flex flex-col space-y-8 lg:grid lg:grid-flow-row lg:grid-cols-2 lg:space-x-0 lg:space-y-0 lg:gap-9 xl:gap-10 2xl:gap-y-14 2xl:gap-x-12">
+            <SharedProjectCard v-for="i in 4" />
         </div>
         <div class="mt-4 items-center justify-center">
             <Button class="w-full">View all Projects</Button>
