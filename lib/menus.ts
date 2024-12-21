@@ -9,17 +9,17 @@ const mainMenu = [
   {
     label: "Projects",
     icon: Projector,
-    url: "/",
+    url: "/projects",
   },
   {
     label: "About",
     icon: Home,
-    url: "/",
+    url: "/about",
   },
   {
     label: "Contact",
     icon: Projector,
-    url: "/",
+    url: "/contact",
   },
 ];
 
