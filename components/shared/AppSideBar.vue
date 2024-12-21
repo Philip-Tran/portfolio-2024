@@ -37,8 +37,8 @@ const items = [
 const handleLogout = async () => {
     if (true) {
         navigateTo("/")
-        if (error) {
-            console.error("Error logout:", (error.message))
+        if (false) {
+            console.error("Error logout:")
         }
     }
 }
@@ -106,7 +106,7 @@ const handleLogout = async () => {
                             <SidebarMenuButton size="lg"
                                 class="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground">
                                 <Avatar class="h-8 w-8 rounded-lg">
-                                    <AvatarImage />
+                                    <!-- <AvatarImage  /> -->
                                     <AvatarFallback class="rounded-lg">
                                         CN
                                     </AvatarFallback>

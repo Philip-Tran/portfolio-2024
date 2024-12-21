@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
     "pinia-plugin-persistedstate/nuxt",
+    "@nuxt/image",
     [
       "@vee-validate/nuxt",
       {
@@ -18,6 +19,11 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  image: {
+    // Options
+    // format: ["webp"],
+  },
+
   piniaPluginPersistedstate: {
     storage: "cookies",
     debug: true,

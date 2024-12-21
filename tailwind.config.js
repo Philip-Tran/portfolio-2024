@@ -33,6 +33,7 @@ module.exports = {
         },
       }),
       fontFamily: {
+        sans: ["Outfit", "ui-sans-serif", "system-ui", "sans-serif"],
         // serif: ["Palatino", "serif"],
         garamond: ["Garamond", "serif"],
         mono: [
@@ -45,6 +46,8 @@ module.exports = {
         ],
       },
       colors: {
+        dark: "#151416",
+        text: "#8C8C8C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
