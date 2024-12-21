@@ -47,9 +47,9 @@ const handleLogout = async () => {
 </script>
 
 <template>
-    <Sidebar class="bg-dark text-text border-r-text border-opacity-30 ">
+    <Sidebar class="bg-dark text-text border-r-text border-opacity-25 ">
         <SidebarHeader class="p-0">
-            <SidebarMenu class="border-b-[0.2px] border-opacity-40 border-text ">
+            <SidebarMenu class="border-b-[0.2px] border-opacity-25 border-text ">
                 <SidebarMenuItem>
                     <div class="min-h-32 py-6 xl:py-8 xl:px-8 px-5">
                         <h3 class="text-white text-2xl mb-1">Phil Tran</h3>
@@ -59,13 +59,14 @@ const handleLogout = async () => {
             </SidebarMenu>
         </SidebarHeader>
         <SidebarContent>
-            <SidebarGroup class="p-0">
+            <SidebarGroup class="p-0 ">
                 <SidebarGroupContent>
-                    <SidebarMenu>
-                        <SidebarMenuItem v-for="item in mainMenu" :key="item.label" class="rounded-none">
+                    <SidebarMenu class="gap-0">
+                        <SidebarMenuItem v-for="item in mainMenu" :key="item.label"
+                            class="rounded-none  hover:bg-text hover:text-white hover:bg-opacity-40">
                             <SidebarMenuButton asChild class="min-h-10 rounded-none">
                                 <NuxtLink :to="item.url"
-                                    class="flex items-center justify-start min-h-16 space-x-3 px-7 py-5 border-b-[0.2px] border-text border-opacity-45">
+                                    class="flex items-center justify-start min-h-16 space-x-3 px-7 py-5 border-b-[0.2px] border-text border-opacity-25">
                                     <component :is="item.icon" />
                                     <span class="text-lg">{{ item.label }}</span>
                                 </NuxtLink>

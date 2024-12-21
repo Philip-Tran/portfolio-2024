@@ -1,4 +1,4 @@
-<script lang="ts" s32etup>
+<script lang="ts" setup>
 import { defineProps } from 'vue';
 const props = defineProps<{
     title?: String
