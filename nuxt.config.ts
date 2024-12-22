@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "pinia-plugin-persistedstate/nuxt",
     "@nuxtjs/i18n",
     "@nuxt/image",
+    "@nuxtjs/mdc",
     "nuxt-svgo",
     [
       "@vee-validate/nuxt",
@@ -22,6 +23,7 @@ export default defineNuxtConfig({
     ],
     "@nuxtjs/i18n",
   ],
+  //@ts-ignore
   svgoOption: {
     svgo: true,
     defaultImport: "component",

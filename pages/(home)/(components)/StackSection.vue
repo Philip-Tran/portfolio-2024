@@ -22,6 +22,7 @@ defineProps<{
                 <!-- <SvgoExpress :fontControlled="false" class="w-8 h-8" filled font-red-500 bg-slate-400 /> -->
                 <SvgoJavascript :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
                 <SvgoTypescriptIcon :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
+                <SvgoPinia :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
                 <SvgoVitejs :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
                 <SvgoZod :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
                 <SvgoTailwindcssIcon :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
