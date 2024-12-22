@@ -11,7 +11,7 @@ enum TechStack {
   PostgreSQL = "PostgreSQL",
 }
 
-interface HomePage {
+export interface HomePage {
   image: {
     url: string;
     altText: string;
@@ -44,9 +44,9 @@ const homePage: HomePage = {
     url: "/images/hero-image.avif",
     altText: "Phil Tran",
   },
-  headline: "Heyo, I'm Kevin — a senior product designer based in Denver",
+  headline: "Hi, my name is Phil Tran — a detail-oriented web developer",
   sub_headline:
-    "In the last 10 years, I've specialized in web and iOS apps for clients ranging from startups to Fortune 100 companies, and everything in between. I'm currently working with the dope folks at Heyo.",
+    "I'm dedicated to provide hight quality work with modern tech stack",
   social: [
     {
       name: "Git Hub",
@@ -112,6 +112,27 @@ const projects: Project[] = [
   },
 ];
 
+const techStack = [
+  {
+    name: "VueJs",
+  },
+  {
+    name: "Nuxt",
+  },
+  {
+    name: "TypeScript",
+  },
+  {
+    name: "TailwindCSS",
+  },
+  {
+    name: "NodeJs",
+  },
+  {
+    name: "Express",
+  },
+];
+
 const contactPage = {
   email: "phil.tranquyet@gmail.com",
   message: "Send me a message, I will get back to you within 24 hours",
@@ -123,4 +144,4 @@ const aboutPage = {
   paragraph: "",
 };
 
-export { homePage, projects, contactPage, aboutPage };
+export { homePage, projects, contactPage, aboutPage, techStack };

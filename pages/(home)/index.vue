@@ -1,53 +1,20 @@
 <script lang="ts" setup>
-import { Dot, Github } from 'lucide-vue-next';
-import { homePage, projects } from '~/lib/content';
+import { homePage, projects, techStack } from '~/lib/content';
+import HeroSection from './(components)/HeroSection.vue';
+import ProjectSection from './(components)/ProjectSection.vue';
 
 </script>
 
 <template>
-    <SharedAppSection>
-        <div class="space-y-5 lg:space-y-6 xl:space-y-10 2xl:space-y-12 ">
-            <div class="flex justify-between items-start">
-                <div class="w-32 h-32 rounded-md">
-                    <NuxtImg :src="homePage.image.url" :alt="homePage.image.altText" height="150px" width="150px"
-                        placeholder />
-                </div>
-                <div>
-                    <NuxtLink to="/contact">
-                        <div
-                            class="p-3 lg:p-3 2xl:px-4 2xl:py-2 pl-1 2xl:pl-2 rounded-md flex  bg-text bg-opacity-45 border text-[#fca311]">
-                            <Dot color="#fca311" :stroke-width="6" class="" />
-                            <span>{{ homePage.status == "available" ? "Open to work" : "I'm quite busy" }}</span>
-                        </div>
-                    </NuxtLink>
-                </div>
+    <HeroSection :home-page="homePage" />
+    <ProjectSection :projects="projects" />
+    <SharedAppSection title="Stack">
+        <div class="flex flex-row flex-wrap justify-center lg:justify-start space-x-4 lg:space-x-7">
+            <div v-for="item in techStack" :key="item.name"
+                class="flex flex-row items-center text-lg lg:text-2xl font-normal">
+                <span>{{ item.name }}</span>
+                <!-- <Separator orientation="vertical" class="text-text bg-text" /> -->
             </div>
-            <div class="space-y-4 ">
-                <h1 class="text-3xl xl:text-4xl  font-sans font-medium max-w-[600px]">
-                    {{ homePage.headline }}
-                </h1>
-                <p class="text-text font-base xl:font-lg max-w-[630px]">
-
-                    {{ homePage.sub_headline }}
-                </p>
-            </div>
-            <div class="flex space-x-4">
-                <NuxtLink class="" v-for="item in homePage.social" :to="item.link" external target="_blank">
-                    <div
-                        class="flex p-3 border border-text rounded-sm items-center justify-center border-opacity-40 hover:border-opacity-60">
-                        <component :is="item.icon" class="w-5 h-5"></component>
-                    </div>
-                </NuxtLink>
-            </div>
-        </div>
-    </SharedAppSection>
-    <SharedAppSection title="Projects">
-        <div
-            class="flex flex-col space-y-8 lg:grid lg:grid-flow-row lg:grid-cols-2 lg:space-x-0 lg:space-y-0 lg:gap-9 xl:gap-10 2xl:gap-y-14 2xl:gap-x-12">
-            <SharedProjectCard v-for="project in projects" :key="project.slug" :project="project" />
-        </div>
-        <div class="mt-4 items-center justify-center">
-            <Button class="w-full">View all Projects</Button>
         </div>
     </SharedAppSection>
 </template>

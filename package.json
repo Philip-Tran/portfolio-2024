@@ -27,6 +27,8 @@
     "dayjs": "^1.11.13",
     "lucide-vue-next": "^0.468.0",
     "nuxt": "^3.14.1592",
+    "nuxt-svgo": "^4.0.9",
+    "nuxt-svgo-loader": "^0.4.1",
     "pinia": "^2.3.0",
     "pinia-plugin-persistedstate": "^4.1.3",
     "prismjs": "^1.29.0",

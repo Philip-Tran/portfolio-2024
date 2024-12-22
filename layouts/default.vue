@@ -11,6 +11,7 @@ import { SidebarProvider, SidebarTrigger } from '~/components/ui/sidebar';
             <div class="w-full">
                 <slot />
             </div>
+            <SharedAppFooter />
         </main>
     </SidebarProvider>
 </template>

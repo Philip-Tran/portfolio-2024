@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { defineProps } from 'vue';
 const props = defineProps({
     title: {
         type: String,
@@ -10,7 +9,6 @@ const props = defineProps({
         required: false,
         default: true
     }
-
 })
 </script>
 
