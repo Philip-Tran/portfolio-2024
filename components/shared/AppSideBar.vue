@@ -69,8 +69,8 @@ const handleLogout = async () => {
                         <SidebarMenuItem v-for="item in mainMenu" :key="item.label"
                             class="rounded-none  hover:bg-text hover:text-white hover:bg-opacity-40">
                             <SidebarMenuButton asChild class="min-h-10 rounded-none">
-                                <NuxtLink :to="item.url" active-class="text-white"
-                                    class="flex items-center justify-start min-h-16 space-x-3 px-7 py-5 border-b-[0.2px] border-text border-opacity-25">
+                                <NuxtLink :to="item.url" active-class="text-white" :external="item.isExternal" class="flex items-center justify-start min-h-16 space-x-3 px-7 py-5 border-b-[0.2px]
+                                    border-text border-opacity-25">
                                     <component :is="item.icon" />
                                     <span class="text-lg">{{ item.label }}</span>
                                 </NuxtLink>
