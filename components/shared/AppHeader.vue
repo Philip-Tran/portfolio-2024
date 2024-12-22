@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { mainMenu } from '~/lib/menus';
 import { CircleX, Menu } from 'lucide-vue-next';
+const route = useRoute()
 
 const isMenuOpen = ref<boolean>(false)
 
@@ -8,18 +9,29 @@ const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value
 }
 
+watch(() => {
+    route.fullPath
+},
+    () => {
+        isMenuOpen.value = false
+    },
+    { deep: true }
+)
+
 </script>
 
 <template>
-    <div class="min-h-12 w-full">
+    <div class="min-h-12 w-full sticky top-0 z-50 bg-dark">
         <div>
             <div class="flex flex-col">
                 <div
                     class="pl-6 flex items-center  border-b-[0.2px] border-opacity-50 border-text  justify-between w-full  space-x-4">
                     <div class="items-center">
-                        <h3 class="text-lg font-medium">
-                            Philip Tran
-                        </h3>
+                        <NuxtLink to="/">
+                            <h3 class="text-lg font-medium">
+                                Philip Tran
+                            </h3>
+                        </NuxtLink>
                     </div>
                     <div
                         class="w-16 h-16 relative items-center flex justify-center border-l-[0.2px] border-opacity-50 border-text">

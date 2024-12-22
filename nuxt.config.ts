@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
     "pinia-plugin-persistedstate/nuxt",
+    "@nuxtjs/i18n",
     "@nuxt/image",
     [
       "@vee-validate/nuxt",
@@ -18,6 +19,7 @@ export default defineNuxtConfig({
         autoImports: false,
       },
     ],
+    "@nuxtjs/i18n",
   ],
   image: {
     // Options
