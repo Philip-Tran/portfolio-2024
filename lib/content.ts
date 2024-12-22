@@ -61,12 +61,12 @@ const homePage: HomePage = {
     {
       name: "Linkedin",
       icon: Linkedin,
-      link: "",
+      link: "https://www.linkedin.com/in/philip-tran-5b1166273/",
     },
     {
       name: "Blog",
       icon: PencilLine,
-      link: "",
+      link: "https://phil-tran-blog.vercel.app/",
     },
   ],
   status: "available",

@@ -2,6 +2,12 @@
 import type { HomePage } from '~/lib/content';
 
 import { Dot, Github } from 'lucide-vue-next';
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from '~/components/ui/tooltip'
 
 defineProps<{
     homePage: HomePage
@@ -36,12 +42,21 @@ defineProps<{
                 </p>
             </div>
             <div class="flex space-x-4">
-                <NuxtLink class="" v-for="item in homePage.social" :to="item.link" external target="_blank">
-                    <div
-                        class="flex p-3 border border-text rounded-sm items-center justify-center border-opacity-40 hover:border-opacity-60">
-                        <component :is="item.icon" class="w-5 h-5"></component>
-                    </div>
-                </NuxtLink>
+                <TooltipProvider>
+                    <Tooltip v-for="item in homePage.social">
+                        <TooltipTrigger as-child>
+                            <NuxtLink class="" :to="item.link" external target="_blank">
+                                <div
+                                    class="flex p-3 border border-text rounded-sm items-center justify-center border-opacity-40 hover:border-opacity-60">
+                                    <component :is="item.icon" class="w-5 h-5"></component>
+                                </div>
+                            </NuxtLink>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                            <p>{{ item.name }}</p>
+                        </TooltipContent>
+                    </Tooltip>
+                </TooltipProvider>
             </div>
         </div>
     </SharedAppSection>

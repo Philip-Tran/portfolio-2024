@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import Express from "../../assets/stack-icons/express.svg"
+import Css from "../../assets/stack-icons/css-3.svg"
 </script>
 
 <template>
@@ -11,16 +12,25 @@ import Express from "../../assets/stack-icons/express.svg"
           <span>VueJs</span>
           <span>Nuxt</span>
           <span>TailwindCSS</span>
-          <!-- <SvgoNodejsIcon class="icon" /> -->
-          <!-- <Express class="icon" width="55px" /> -->
+
         </div>
         <span class="text-orange-500">By Philip Tran</span>
       </div>
     </div>
   </SharedAppSection>
 </template>
-<style>
+<style scoped>
 .icon {
   width: 55px;
+}
+
+.svg-icon {
+  fill: none;
+  /* or whatever your default state is */
+}
+
+.svg-icon:hover {
+  fill: currentColor;
+  /* or your specific color */
 }
 </style>

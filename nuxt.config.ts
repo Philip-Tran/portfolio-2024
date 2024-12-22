@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     "pinia-plugin-persistedstate/nuxt",
     "@nuxtjs/i18n",
     "@nuxt/image",
-    "nuxt-svgo-loader",
     "nuxt-svgo",
     [
       "@vee-validate/nuxt",
@@ -23,6 +22,17 @@ export default defineNuxtConfig({
     ],
     "@nuxtjs/i18n",
   ],
+  svgoOption: {
+    svgo: true,
+    defaultImport: "component",
+    svgoConfig: {
+      multipass: true,
+      removeViewBox: false,
+    },
+  },
+  svgo: {
+    autoImportPath: "./assets/stack-icons/",
+  },
 
   image: {
     // Options
