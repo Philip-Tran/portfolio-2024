@@ -129,6 +129,12 @@ const techStack: stack[] = [
     name: "TypeScript",
   },
   {
+    name: "JavaScript",
+  },
+  {
+    name: "WordPress",
+  },
+  {
     name: "TailwindCSS",
   },
   {
