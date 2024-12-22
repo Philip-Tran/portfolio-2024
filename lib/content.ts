@@ -32,6 +32,7 @@ export interface Project {
   slug: string;
   isFeatured: boolean;
   linkLive: string;
+  repoLink?: string;
   stack: TechStack[];
   screenShots: {
     url: string;
@@ -75,6 +76,7 @@ const projects: Project[] = [
     isFeatured: true,
     slug: "joy-read",
     linkLive: "",
+    repoLink: "https://github.com/Philip-Tran/joy-read",
     stack: [
       TechStack.VueJS,
       TechStack.Express,
@@ -96,6 +98,7 @@ const projects: Project[] = [
     isFeatured: true,
     slug: "joy-read-2",
     linkLive: "",
+    repoLink: "https://github.com/Philip-Tran/joy-read",
     stack: [
       TechStack.VueJS,
       TechStack.Express,
