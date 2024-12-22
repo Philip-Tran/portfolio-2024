@@ -52,8 +52,12 @@ const handleLogout = async () => {
             <SidebarMenu class="border-b-[0.2px] border-opacity-25 border-text ">
                 <SidebarMenuItem>
                     <div class="min-h-32 py-6 xl:py-8 xl:px-8 px-5">
-                        <h3 class="text-white text-2xl mb-1">Phil Tran</h3>
-                        <p>Web Developer</p>
+                        <div>
+                            <NuxtLink to="/" class="">
+                                <h3 class="text-white text-2xl mb-1 hover:text-orange-400">Phil Tran</h3>
+                                <p>Web Developer</p>
+                            </NuxtLink>
+                        </div>
                     </div>
                 </SidebarMenuItem>
             </SidebarMenu>

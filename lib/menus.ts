@@ -1,4 +1,4 @@
-import { Home, Projector } from "lucide-vue-next";
+import { CircleUserRound, Home, Mail, Target } from "lucide-vue-next";
 
 const mainMenu = [
   {
@@ -8,17 +8,17 @@ const mainMenu = [
   },
   {
     label: "Projects",
-    icon: Projector,
+    icon: Target,
     url: "/projects",
   },
   {
     label: "About",
-    icon: Home,
+    icon: CircleUserRound,
     url: "/about",
   },
   {
     label: "Contact",
-    icon: Projector,
+    icon: Mail,
     url: "/contact",
   },
 ];

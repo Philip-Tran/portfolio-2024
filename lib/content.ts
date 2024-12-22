@@ -5,6 +5,10 @@ import type { FunctionalComponent } from "vue";
 enum TechStack {
   VueJS = "VueJS",
   Nuxt = "Nuxt",
+  Pinia = "Pinia",
+  Zod = "Zod",
+  Vite = "Vite",
+  TailwindCSS = "TailwindCSS",
   TypeScript = "TypeScript",
   NodeJS = "NodeJS",
   Express = "Express",
@@ -78,11 +82,13 @@ const projects: Project[] = [
     linkLive: "",
     repoLink: "https://github.com/Philip-Tran/joy-read",
     stack: [
+      TechStack.TypeScript,
       TechStack.VueJS,
+      TechStack.Pinia,
       TechStack.Express,
       TechStack.NodeJS,
-      TechStack.Nuxt,
-      TechStack.TypeScript,
+      TechStack.Vite,
+      TechStack.Zod,
     ],
     screenShots: [
       {
@@ -92,20 +98,14 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Joy Read rr34",
+    title: "Phil Tech Blog",
     brief: "",
-    description: "Language learning platform",
+    description: "Blog app with CMS, rich text editor",
     isFeatured: true,
-    slug: "joy-read-2",
+    slug: "tech-blog",
     linkLive: "",
-    repoLink: "https://github.com/Philip-Tran/joy-read",
-    stack: [
-      TechStack.VueJS,
-      TechStack.Express,
-      TechStack.NodeJS,
-      TechStack.Nuxt,
-      TechStack.TypeScript,
-    ],
+    repoLink: "https://github.com/Philip-Tran/personal-tech-blog",
+    stack: [TechStack.VueJS, TechStack.Nuxt, TechStack.TypeScript],
     screenShots: [
       {
         url: "",
@@ -115,7 +115,10 @@ const projects: Project[] = [
   },
 ];
 
-const techStack = [
+export interface stack {
+  name: string;
+}
+const techStack: stack[] = [
   {
     name: "VueJs",
   },
@@ -144,7 +147,8 @@ const contactPage = {
 
 const aboutPage = {
   brief: "I am that I am",
-  paragraph: "",
+  paragraph:
+    "<h1>This is what I want to say</h1> <p>This is a short introduction</p>",
 };
 
 export { homePage, projects, contactPage, aboutPage, techStack };
