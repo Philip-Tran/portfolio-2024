@@ -9,7 +9,7 @@ defineProps<{
     <NuxtLink :to="`/projects/${project.slug}`">
         <div class="space-y-5 lg:space-y-5">
             <div class="w-full relative group aspect-video">
-                <NuxtImg src="/images/hero-image.avif" class="object-cover rounded-lg w-full h-full " placeholder />
+                <NuxtImg :src="project.featureImage" class="object-cover rounded-lg w-full h-full " placeholder />
                 <div
                     class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
                 </div>

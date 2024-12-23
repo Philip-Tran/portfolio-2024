@@ -7,7 +7,7 @@ import { SidebarProvider, SidebarTrigger } from '~/components/ui/sidebar';
     <SidebarProvider>
         <AppSideBar />
         <main class="w-full min-h-screen bg-dark text-white">
-            <SharedAppHeader class="lg:hidden" />
+            <SharedAppHeader class="md:hidden" />
             <div class="w-full">
                 <slot />
             </div>

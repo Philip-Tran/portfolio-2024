@@ -39,6 +39,7 @@ export interface Project {
   brief: string;
   keyFeatures: string[];
   description?: string;
+  featureImage: string;
   slug: string;
   isFeatured: boolean;
   linkLive?: string;
@@ -83,6 +84,7 @@ const projects: Project[] = [
   {
     title: "Joy Read - Language Learning tool",
     isFeatured: true,
+    featureImage: "/images/project/blogcms-2.png",
     slug: "joy-read",
     brief:
       "Accelerate reading experience when learning other language by creating book from the source you love with one click popup translation",
@@ -123,6 +125,7 @@ const projects: Project[] = [
   {
     title: "Phil Tech Blog",
     brief: "",
+    featureImage: "/images/project/blogcms-2.png",
     keyFeatures: [
       "Create book by extract text from PDF file, any YouTube video or Website in any language",
       "One click Select text popup translation for single word and a sentence or prase",

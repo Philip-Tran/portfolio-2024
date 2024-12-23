@@ -46,15 +46,22 @@ watch(() => {
                 </div>
 
                 <!-- Mobile menu -->
-                <div v-show="isMenuOpen" class="flex flex-col">
-                    <div v-for="(item, index) in mainMenu" :key="item.label + index" class="">
-                        <NuxtLink :to="item.url" active-class="text-white bg-text bg-opacity-10"
-                            class="flex items-center justify-start space-x-5 px-7 text-text py-5 border-b-[0.2px] border-text border-opacity-45">
-                            <component :is="item.icon" class="w-4 h-4"></component>
-                            <span>{{ item.label }}</span>
-                        </NuxtLink>
+                <Transition enter-active-class="transition-all duration-300 ease-out"
+                    enter-from-class="opacity-0 -translate-y-5" enter-to-class="opacity-100 translate-y-0"
+                    leave-active-class="transition-all duration-200 ease-in"
+                    leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-5">
+                    <div v-show="isMenuOpen" class="flex flex-col">
+                        <ul>
+                            <li v-for="(item, index) in mainMenu" :key="item.label + index" class="">
+                                <NuxtLink :to="item.url" active-class="text-white bg-text bg-opacity-10"
+                                    class="flex items-center justify-start space-x-5 px-7 text-text py-5 border-b-[0.2px] border-text border-opacity-45">
+                                    <component :is="item.icon" class="w-4 h-4"></component>
+                                    <span>{{ item.label }}</span>
+                                </NuxtLink>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </Transition>
             </div>
         </div>
     </div>
