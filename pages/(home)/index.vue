@@ -4,6 +4,11 @@ import HeroSection from './(components)/HeroSection.vue';
 import ProjectSection from './(components)/ProjectSection.vue';
 import StackSection from './(components)/StackSection.vue';
 
+useSeoMeta({
+    description: "A Progressive Frontend Developer - Designer",
+    ogLocale: "en"
+})
+
 </script>
 
 <template>
