@@ -35,6 +35,7 @@ const mainMenu = [
     label: "Contact",
     icon: Mail,
     url: "/contact",
+    isExternal: false,
   },
 ];
 

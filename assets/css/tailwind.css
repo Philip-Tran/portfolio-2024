@@ -71,18 +71,18 @@
   height: 8px; /* Horizontal scrollbar height */
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #0f295076;
-  border-radius: 4px;
+  background-color: #808080;
+  border-radius: 8px;
   border: 2px solid transparent;
   background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #614e0876;
+  background-color: #b7aa96;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-  border-radius: 8px;
+  background-color: #434241;
+  /* border-radius: 8px; */
 }
 
 ::-webkit-scrollbar-horizontal {
@@ -96,7 +96,7 @@ pre[class*="language-"] {
   @apply rounded-xl;
 }
 .copy-to-clipboard-button {
-  @apply uppercase py-1 px-3 rounded-md bg-gray-700 hover:bg-gray-600 text-xs tracking-wide text-gray-50 !important;
+  @apply uppercase font-sans py-1 px-3 rounded-sm bg-gray-700 hover:bg-gray-600 text-xs tracking-wide text-gray-50 !important;
   font-size: 0.65rem !important;
   letter-spacing: 0.1em !important;
 }

@@ -25,7 +25,7 @@ defineProps<{
                 <div>
                     <NuxtLink to="/contact">
                         <div
-                            class="p-3 lg:p-3 2xl:px-4 2xl:py-2 pl-1 2xl:pl-2 rounded-md flex  bg-text bg-opacity-45 border text-[#fca311]">
+                            class=" p-2 lg:p-3 2xl:px-4 2xl:py-2 pl-1 2xl:pl-2 rounded-md flex  bg-text bg-opacity-45 border text-[#fca311]">
                             <Dot color="#fca311" :stroke-width="6" class="" />
                             <span>{{ homePage.status == "available" ? "Open to work" : "I'm quite busy" }}</span>
                         </div>

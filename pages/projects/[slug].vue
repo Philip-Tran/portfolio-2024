@@ -15,7 +15,9 @@ onBeforeMount(() => {
         <SharedAppSection>
             <div>
                 <NuxtLink to="/projects">
-                    <Button class="px-0 hover:text-orange-500  transition-all duration-600">
+                    <Button
+                        class="text-gray-400 px-0 hover:text-orange-500 transition-all duration-600 bg-transparent hover:bg-transparent"
+                        variant="ghost">
                         <ArrowLeft />
                         <span>Back</span>
                     </Button>
@@ -41,7 +43,7 @@ onBeforeMount(() => {
                         <div class="flex space-x-2 lg:space-x-3">
                             <NuxtLink v-if="project?.linkLive" :to="project?.linkLive" external target="_blank">
                                 <Button class="bg-transparent  border-text rounded-sm" variant="outline">View Live
-                                    Website</Button>
+                                    Project</Button>
                             </NuxtLink>
                             <NuxtLink v-if="project?.repoLink" :to="project?.repoLink" external target="_blank">
                                 <Button class="bg-transparent  border-text rounded-sm" variant="outline">
@@ -55,8 +57,8 @@ onBeforeMount(() => {
                         <span class="text-xl 2xl:text-2xl">Stack</span>
                         <div class="flex flex-wrap gap-3">
                             <div v-for="item in project?.stack"
-                                class="py-1 px-2 rounded-lg border border-text text-text">
-                                <span>{{ item }}</span>
+                                class="py-1 px-2 rounded-lg border border-text text-text border-opacity-70">
+                                <span class="hover:text-white">{{ item }}</span>
                             </div>
                         </div>
                     </div>

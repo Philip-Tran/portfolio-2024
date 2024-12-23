@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Toaster } from '@/components/ui/sonner'
 import { AppData } from './lib/app';
+import { Toaster } from '@/components/ui/sonner'
 
 useHead({
   titleTemplate: (titleChunk) => {

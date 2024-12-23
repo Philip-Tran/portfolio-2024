@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-    <SharedAppSection title="Stack" description="I'm always learning and expanding">
+    <SharedAppSection title="Stack" description="I'm constantly learning and expanding">
         <div class="flex flex-col lg:flex-row items-start lg:space-x-4">
             <div class="flex flex-row lg:w-2/3 flex-wrap justify-center lg:justify-start space-x-4 lg:space-x-7">
                 <div v-for="item in techStack" :key="item.name"
