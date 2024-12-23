@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { AppData } from '~/lib/app';
 import { aboutPage } from '~/lib/content';
+
+useHead({
+    title: `About`
+})
 
 </script>
 

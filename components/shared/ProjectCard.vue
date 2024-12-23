@@ -8,8 +8,11 @@ defineProps<{
 <template>
     <NuxtLink :to="`/projects/${project.slug}`">
         <div class="space-y-5 lg:space-y-5">
-            <div class="w-full h-72 xl:h-80 2xl:h-96 relative">
-                <NuxtImg src="/images/hero-image.avif" class="object-cover rounded-lg w-full h-full" placeholder />
+            <div class="w-full h-72 xl:h-80 2xl:h-96 relative group">
+                <NuxtImg src="/images/hero-image.avif" class="object-cover rounded-lg w-full h-full " placeholder />
+                <div
+                    class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                </div>
             </div>
 
             <div class="space-y-2">
@@ -19,7 +22,7 @@ defineProps<{
                         {{ tech }}
                     </span>
                 </div>
-                <h4 class="text-xl lg:text-2xl font-normal">{{ project.title }}</h4>
+                <h4 class="text-xl lg:text-2xl font-normal hover:text-orange-500">{{ project.title }}</h4>
             </div>
         </div>
     </NuxtLink>

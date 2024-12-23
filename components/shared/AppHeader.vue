@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { AppData } from '~/lib/app';
 import { mainMenu } from '~/lib/menus';
 import { CircleX, Menu } from 'lucide-vue-next';
 const route = useRoute()
@@ -29,7 +30,7 @@ watch(() => {
                     <div class="items-center">
                         <NuxtLink to="/">
                             <h3 class="text-lg font-medium">
-                                Philip Tran
+                                {{ AppData.logo_text }}
                             </h3>
                         </NuxtLink>
                     </div>
@@ -43,11 +44,13 @@ watch(() => {
                         </button>
                     </div>
                 </div>
+
+                <!-- Mobile menu -->
                 <div v-show="isMenuOpen" class="flex flex-col">
-                    <div v-for="(item, index) in mainMenu" :key="item.label" class="">
-                        <NuxtLink :to="item.url"
-                            class="flex items-center justify-start space-x-5 px-7 py-5 border-b-[0.2px] border-text border-opacity-45">
-                            <component :is="item.icon"></component>
+                    <div v-for="(item, index) in mainMenu" :key="item.label + index" class="">
+                        <NuxtLink :to="item.url" active-class="text-white bg-text bg-opacity-10"
+                            class="flex items-center justify-start space-x-5 px-7 text-text py-5 border-b-[0.2px] border-text border-opacity-45">
+                            <component :is="item.icon" class="w-4 h-4"></component>
                             <span>{{ item.label }}</span>
                         </NuxtLink>
                     </div>

@@ -6,12 +6,12 @@ defineProps<{
 </script>
 
 <template>
-    <SharedAppSection title="Stack">
+    <SharedAppSection title="Stack" description="I'm always learning and expanding">
         <div class="flex flex-col lg:flex-row items-start lg:space-x-4">
             <div class="flex flex-row lg:w-2/3 flex-wrap justify-center lg:justify-start space-x-4 lg:space-x-7">
                 <div v-for="item in techStack" :key="item.name"
                     class="flex flex-row items-center text-lg lg:text-2xl font-normal mb-5">
-                    <span>{{ item.name }}</span>
+                    <span class="text-text hover:text-white">{{ item.name }}</span>
                     <!-- <Separator orientation="vertical" class="text-text bg-text" /> -->
                 </div>
             </div>
@@ -33,6 +33,10 @@ defineProps<{
                 <SvgoHtml5 :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
                 <SvgoCss3 :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
                 <SvgoWordpress :fontControlled="false" class="w-auto h-8 m-2 2xl:m-3" filled />
+                <!-- <SvgoMongodb :fontControlled="false"
+                    class="w-auto h-8 m-2 2xl:m-3 bg-slate-50 bg-opacity-20 rounded-sm p-1" filled /> -->
+                <SvgoMongodbIcon :fontControlled="false" class="w-auto h-8 m-2 2xl:m-3" filled />
+                <SvgoPostgresql :fontControlled="false" class="w-auto h-8 m-2 2xl:m-3" filled />
                 <SvgoSupabaseIcon :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
                 <SvgoFigma :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />
                 <SvgoNotionIcon :fontControlled="false" class="w-8 h-8 m-2 2xl:m-3" filled />

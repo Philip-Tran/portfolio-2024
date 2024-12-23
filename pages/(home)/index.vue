@@ -1,4 +1,9 @@
 <script lang="ts" setup>
+// useHead({
+//     title: AppData.logo_text
+// })
+
+import { AppData } from '~/lib/app';
 import { homePage, projects, techStack } from '~/lib/content';
 import HeroSection from './(components)/HeroSection.vue';
 import ProjectSection from './(components)/ProjectSection.vue';

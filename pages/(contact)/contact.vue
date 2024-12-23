@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { contactPage } from '~/lib/content';
+
+useHead({
+    title: "Contact"
+})
 </script>
 
 <template>

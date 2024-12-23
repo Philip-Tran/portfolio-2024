@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { AppData } from '~/lib/app';
 import { projects } from '~/lib/content';
+useHead({
+    title: `Projects`
+})
+
 </script>
 
 <template>

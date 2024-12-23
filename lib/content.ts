@@ -1,5 +1,4 @@
 import { Github, Linkedin, PencilLine } from "lucide-vue-next";
-import type { Node } from "typescript";
 import type { FunctionalComponent } from "vue";
 
 enum TechStack {
@@ -10,9 +9,13 @@ enum TechStack {
   Vite = "Vite",
   TailwindCSS = "TailwindCSS",
   TypeScript = "TypeScript",
+  JavaScript = "JavaScript",
   NodeJS = "NodeJS",
   Express = "Express",
   PostgreSQL = "PostgreSQL",
+  WordPress = "WordPress",
+  Sass = "Sass",
+  Bem = "BEM",
 }
 
 export interface HomePage {
@@ -32,15 +35,17 @@ export interface HomePage {
 export interface Project {
   title: string;
   brief: string;
-  description: string;
+  keyFeatures: string[];
+  description?: string;
   slug: string;
   isFeatured: boolean;
-  linkLive: string;
+  linkLive?: string;
   repoLink?: string;
   stack: TechStack[];
   screenShots: {
     url: string;
-    altText: string;
+    descriptionText: string;
+    altText?: string;
   }[];
 }
 
@@ -74,12 +79,20 @@ const homePage: HomePage = {
 
 const projects: Project[] = [
   {
-    title: "Joy Read",
-    brief: "",
-    description: "Language learning platform",
+    title: "Joy Read - Language Learning tool",
     isFeatured: true,
     slug: "joy-read",
-    linkLive: "",
+    brief:
+      "Accelerate reading experience when learning other language by creating book from the source you love with one click popup translation",
+    keyFeatures: [
+      "Create book by extract text from PDF file, any YouTube video or Website in any language",
+      "One click Select text popup translation for single word and a sentence or prase",
+      "Support every language on earth",
+      "Non distracted reading mode",
+    ],
+    description:
+      "I've been learning Spanish over the past months and I love learning languages in general. Reading is a must if you want to grow your lexicon and being able to produce in the language you are learning in a holistic way latter on. But reading in the language we are learning is not always smooth, some time the context doesn't help you to understand the word you don't know, but if you are reading the book that doesn't have words that you don't know It's not a good book, to use to learning language at least. So I decided to create my own solution and this app is it. It's still in early stage, but it does the job and I'm happy with it, know I'm using it to learn Spanish almost everyday",
+    linkLive: "https://joyread-tranquyet.vercel.app/",
     repoLink: "https://github.com/Philip-Tran/joy-read",
     stack: [
       TechStack.TypeScript,
@@ -89,10 +102,18 @@ const projects: Project[] = [
       TechStack.NodeJS,
       TechStack.Vite,
       TechStack.Zod,
+      TechStack.JavaScript,
+      TechStack.TailwindCSS,
     ],
     screenShots: [
       {
-        url: "",
+        url: "/images/project/blogcms-2.png",
+        descriptionText: "Create book screen",
+        altText: "",
+      },
+      {
+        url: "/images/project/blogcms.png",
+        descriptionText: "Dashboard Screen",
         altText: "",
       },
     ],
@@ -100,6 +121,12 @@ const projects: Project[] = [
   {
     title: "Phil Tech Blog",
     brief: "",
+    keyFeatures: [
+      "Create book by extract text from PDF file, any YouTube video or Website in any language",
+      "One click Select text popup translation for single word and a sentence or prase",
+      "Support every language on earth",
+      "Non distracted reading mode",
+    ],
     description: "Blog app with CMS, rich text editor",
     isFeatured: true,
     slug: "tech-blog",
@@ -109,6 +136,7 @@ const projects: Project[] = [
     screenShots: [
       {
         url: "",
+        descriptionText: "",
         altText: "",
       },
     ],

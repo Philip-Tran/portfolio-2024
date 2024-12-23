@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { AppData } from "~/lib/app"
 import { mainMenu } from "~/lib/menus"
-import { BadgeCheck, Calendar, ChevronDown, ChevronsUpDown, Home, Inbox, LogOut, PenLine, Search, Settings, Sparkles } from "lucide-vue-next"
 
 import {
     Sidebar,
@@ -14,35 +14,6 @@ import {
     SidebarHeader,
     SidebarFooter
 } from "~/components/ui/sidebar"
-import {
-    DropdownMenuItem,
-    DropdownMenu,
-    DropdownMenuTrigger,
-    DropdownMenuContent
-} from "~/components/ui/dropdown-menu"
-import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar'
-
-const items = [
-    {
-        title: "Dashboard",
-        url: "/dashboard",
-        icon: Home,
-    },
-    {
-        title: "Account",
-        url: "/dashboard/account",
-        icon: PenLine,
-    },
-]
-
-const handleLogout = async () => {
-    if (true) {
-        navigateTo("/")
-        if (false) {
-            console.error("Error logout:")
-        }
-    }
-}
 
 </script>
 
@@ -54,7 +25,7 @@ const handleLogout = async () => {
                     <div class="min-h-32 py-6 xl:py-8 xl:px-8 px-5">
                         <div>
                             <NuxtLink to="/" class="">
-                                <h3 class="text-white text-2xl mb-1 hover:text-orange-400">Phil Tran</h3>
+                                <h3 class="text-white text-2xl mb-1 hover:text-orange-400">{{ AppData.logo_text }}</h3>
                                 <p>Web Developer</p>
                             </NuxtLink>
                         </div>
@@ -67,7 +38,7 @@ const handleLogout = async () => {
                 <SidebarGroupContent>
                     <SidebarMenu class="gap-0">
                         <SidebarMenuItem v-for="item in mainMenu" :key="item.label"
-                            class="rounded-none  hover:bg-text hover:text-white hover:bg-opacity-40">
+                            class="rounded-none  hover:bg-text hover:text-white hover:bg-opacity-10">
                             <SidebarMenuButton asChild class="min-h-10 rounded-none">
                                 <NuxtLink :to="item.url" active-class="text-white" :external="item.isExternal" class="flex items-center justify-start min-h-16 space-x-3 px-7 py-5 border-b-[0.2px]
                                     border-text border-opacity-25">
