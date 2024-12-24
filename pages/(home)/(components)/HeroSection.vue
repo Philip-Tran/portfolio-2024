@@ -36,7 +36,7 @@ defineProps<{
                 <h1 class="text-3xl xl:text-4xl  font-sans font-medium max-w-[600px]">
                     {{ homePage.headline }}
                 </h1>
-                <p class="text-text font-base xl:font-lg max-w-[630px]">
+                <p class="text-text text-base xl:text-lg 2xl:text-lg max-w-[630px]">
 
                     {{ homePage.sub_headline }}
                 </p>
