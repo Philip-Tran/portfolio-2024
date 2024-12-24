@@ -16,13 +16,13 @@ defineProps<{
             </div>
 
             <div class="space-y-2">
-                <div class="flex flex-wrap gap-2">
-                    <span v-for="tech in project.stack" :key="tech"
+                <ul class="flex flex-wrap gap-2">
+                    <li v-for="tech in project.stack" :key="tech"
                         class="px-3 py-1 text-xs font-medium bg-text rounded-full text-gray-900">
                         {{ tech }}
-                    </span>
-                </div>
-                <h4 class="text-xl lg:text-2xl font-normal hover:text-orange-500">{{ project.title }}</h4>
+                    </li>
+                </ul>
+                <h3 class="text-xl lg:text-2xl font-normal hover:text-orange-500">{{ project.title }}</h3>
             </div>
         </div>
     </NuxtLink>
