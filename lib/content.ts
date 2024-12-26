@@ -332,8 +332,8 @@ const projects: Project[] = [
       "I built this app first for personal use, cause I've always wanted to publish my own content. Build with Brick Builder on WordPress with performance in mind and a lot of custom Javascript and Scss code",
     isFeatured: true,
     slug: "wordpress-qtube",
-    linkLive: "https://ticket-mern.vercel.app/",
-    repoLink: "https://github.com/Philip-Tran/ticket-mevn",
+    linkLive: "https://es.chungsport.vn",
+    // repoLink: "",
     stack: [
       TechStack.WordPress,
       TechStack.JavaScript,
