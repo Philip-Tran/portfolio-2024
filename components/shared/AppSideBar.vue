@@ -26,7 +26,7 @@ import {
                         <div>
                             <NuxtLink to="/" class="">
                                 <h3 class="text-white text-2xl mb-1 hover:text-orange-400">{{ AppData.logo_text }}</h3>
-                                <p>Web Developer</p>
+                                <p>{{ AppData.brief_description }}</p>
                             </NuxtLink>
                         </div>
                     </div>

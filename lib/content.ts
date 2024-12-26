@@ -58,7 +58,7 @@ const homePage: HomePage = {
     url: "/images/hero-image.avif",
     altText: "Phil Tran",
   },
-  headline: "Hi, my name is Phil Tran — a detail-oriented web developer",
+  headline: "Hi, my name is Phil Tran — aspiring Frontend Developer",
   sub_headline:
     "I'm dedicated to provide hight quality work with modern tech stack",
   social: [
@@ -85,7 +85,7 @@ const projects: Project[] = [
   {
     title: "Joy Read - Language Learning tool",
     isFeatured: true,
-    featureImage: "/images/project/blogcms-2.png",
+    featureImage: "/images/project/project-joyread-01.png",
     slug: "joy-read",
     brief:
       "Accelerate reading experience when learning other language by creating book from the source you love with one click popup translation",
@@ -114,13 +114,45 @@ const projects: Project[] = [
     ],
     screenShots: [
       {
-        url: "/images/project/blogcms-2.png",
-        descriptionText: "Create book screen",
+        url: "/images/project/project-joyread-08.png",
+        descriptionText:
+          "Create book by extract text from blog post one click away. And three other ways to create book",
         altText: "",
       },
       {
-        url: "/images/project/blogcms.png",
-        descriptionText: "Dashboard Screen",
+        url: "/images/project/project-joyread-07.png",
+        descriptionText: "Non-distracted Reading screen",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-joyread-05.png",
+        descriptionText: "One click away to get the translation",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-joyread-04.png",
+        descriptionText:
+          "Translate whatever you want, listen to the audio. Create flashcard by one click",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-joyread-02.png",
+        descriptionText: "Review flashcard",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-joyread-06.png",
+        descriptionText: "Setting",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-joyread-03.png",
+        descriptionText: "App settings screen, support every language on earth",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-joyread-01.png",
+        descriptionText: "Action",
         altText: "",
       },
     ],
@@ -129,7 +161,7 @@ const projects: Project[] = [
     title: "Phil Blog - Blogging App with full CMS for minimalistic blogger",
     brief:
       "Blogging platform with clean interface, full functionality text editor, just share your words",
-    featureImage: "/images/project/blogcms-2.png",
+    featureImage: "/images/project/project-blogcms-01.png",
     keyFeatures: [
       "Create, edit post with clean interface",
       "Save post as Draft of Published",
@@ -153,8 +185,33 @@ const projects: Project[] = [
     ],
     screenShots: [
       {
-        url: "",
-        descriptionText: "",
+        url: "/images/project/project-blogcms-01.png",
+        descriptionText: "Admin dashboard",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-blogcms-05.png",
+        descriptionText: "Single blog screen",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-blogcms-02.png",
+        descriptionText: "Save as draft or publish",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-blogcms-03.png",
+        descriptionText: "Edit, delete post",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-blogcms-04.png",
+        descriptionText: "Minimal but full feature post editor",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-blogcms-06.png",
+        descriptionText: "Front page",
         altText: "",
       },
     ],
@@ -162,7 +219,7 @@ const projects: Project[] = [
   {
     title: "Portfolio site",
     brief: "My own portfolio site build with VueJs, Nuxt",
-    featureImage: "/images/project/blogcms-2.png",
+    featureImage: "/images/project/project-chungsport-03.png",
     keyFeatures: [
       "Static site, host every where for free",
       "Fully responsive",
@@ -205,8 +262,8 @@ const projects: Project[] = [
   },
   {
     title: "Ecommerce shop - WordPress",
-    brief: "Ecommerce shop built with WordPress and Page Builder",
-    featureImage: "/images/project/blogcms-2.png",
+    brief: "Ecommerce shop built with WordPress and Elementor Page Builder",
+    featureImage: "/images/project/project-chungsport-03.png",
     keyFeatures: ["SEO Optimized", "Fully responsive"],
     description:
       "I built this site from the ground up. I was responsible for the whole project from gathering business requirement from the client, design brand identity, design the site and bring it to live in WordPress using Elementor",
@@ -217,32 +274,32 @@ const projects: Project[] = [
     stack: [TechStack.WordPress],
     screenShots: [
       {
-        url: "/images/project/blogcms-2.png",
-        descriptionText: "Home screen",
+        url: "/images/project/project-chungsport-03.png",
+        descriptionText: "Front page",
         altText: "",
       },
       {
-        url: "/images/project/blogcms.png",
-        descriptionText: "Home screen",
+        url: "/images/project/project-chungsport-01.png",
+        descriptionText: "Product page",
         altText: "",
       },
       {
-        url: "/images/project/blogcms-2.png",
-        descriptionText: "Home screen",
+        url: "/images/project/project-chungsport-02.png",
+        descriptionText: "Shop page",
         altText: "",
       },
       {
-        url: "/images/project/blogcms.png",
-        descriptionText: "Home screen",
+        url: "/images/project/project-chungsport-04.png",
+        descriptionText: "Brand design",
         altText: "",
       },
     ],
   },
   {
-    title: "Ticket support app",
+    title: "Ticket support app - MEVN stack",
     brief:
       "Allow user create ticket, reply to ticket and add notes with authentication and authorization",
-    featureImage: "/images/project/blogcms-2.png",
+    featureImage: "/images/project/project-ticketapp-01.PNG",
     keyFeatures: [
       "Create ticket for product",
       "Reply to ticket, add notes and close ticket",
@@ -265,22 +322,12 @@ const projects: Project[] = [
     ],
     screenShots: [
       {
-        url: "/images/project/blogcms-2.png",
-        descriptionText: "Home screen",
+        url: "/images/project/project-ticketapp-01.PNG",
+        descriptionText: "Tickets listing screen",
         altText: "",
       },
       {
-        url: "/images/project/blogcms.png",
-        descriptionText: "Home screen",
-        altText: "",
-      },
-      {
-        url: "/images/project/blogcms-2.png",
-        descriptionText: "Home screen",
-        altText: "",
-      },
-      {
-        url: "/images/project/blogcms.png",
+        url: "/images/project/project-ticketapp-02.PNG",
         descriptionText: "Home screen",
         altText: "",
       },
@@ -290,7 +337,7 @@ const projects: Project[] = [
     title: "QTube - Youtube inspired video publishing platform",
     brief:
       "Publish your own video, podcast and writing all in one place with easy to use CMS, allow comment for authenticated user and more",
-    featureImage: "/images/project/blogcms-2.png",
+    featureImage: "/images/project/project-q-tube-01.png",
     keyFeatures: [
       "Fully responsive",
       "Fully functional CMS system",
@@ -310,23 +357,28 @@ const projects: Project[] = [
     ],
     screenShots: [
       {
-        url: "/images/project/blogcms-2.png",
+        url: "/images/project/project-q-tube-01.png",
+        descriptionText: "Fully responsive",
+        altText: "",
+      },
+      {
+        url: "/images/project/project-q-tube-04.png",
         descriptionText: "Home screen",
         altText: "",
       },
       {
-        url: "/images/project/blogcms.png",
-        descriptionText: "Home screen",
+        url: "/images/project/project-q-tube-05.png",
+        descriptionText: "Home screen light mode",
         altText: "",
       },
       {
-        url: "/images/project/blogcms-2.png",
-        descriptionText: "Home screen",
+        url: "/images/project/project-q-tube-02.png",
+        descriptionText: "Single post screen",
         altText: "",
       },
       {
-        url: "/images/project/blogcms.png",
-        descriptionText: "Home screen",
+        url: "/images/project/project-q-tube-03.png",
+        descriptionText: "Single video",
         altText: "",
       },
     ],

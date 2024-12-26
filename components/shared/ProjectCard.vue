@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
     <NuxtLink :to="`/projects/${project.slug}`">
-        <div class="space-y-5 lg:space-y-5">
+        <div class="space-y-5 lg:space-y-5 hover:text-orange-500">
             <div class="w-full relative group aspect-video">
                 <NuxtImg :src="project.featureImage" class="object-cover rounded-lg w-full h-full " placeholder />
                 <div
