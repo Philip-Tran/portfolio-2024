@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     pageTransition: { name: "rotate" },
+    // head: {
+    //   link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+    // },
   },
   modules: [
     "@nuxtjs/tailwindcss",

@@ -65,11 +65,11 @@ onBeforeMount(() => {
                 </div>
                 <Separator class="bg-opacity-25 bg-text" />
                 <div class="w-full flex flex-col 2xl:space-x-8 2xl:flex-row">
-                    <div class="flex flex-col space-y-3 2xl:space-y-6 2xl:w-4/4">
+                    <div class="flex flex-col space-y-3 2xl:space-y-6 2xl:w-3/4">
                         <h3 class="text-xl lg:text-2xl 2xl:text-3xl">Screenshots</h3>
                         <div class="flex flex-col space-y-6 lg:space-y-7 2xl:space-y-12">
                             <div class="relative group" v-for="item in project?.screenShots" :key="item.url">
-                                <NuxtImg :src="item.url" class="rounded-sm" />
+                                <NuxtImg :src="item.url" class="rounded-sm w-full" />
                                 <div
                                     class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
                                     <span class="text-white text-lg xl:text-2xl">{{ item.descriptionText }}</span>

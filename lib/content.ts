@@ -55,7 +55,7 @@ export interface Project {
 
 const homePage: HomePage = {
   image: {
-    url: "/images/hero-image.avif",
+    url: "/images/image-me.png",
     altText: "Phil Tran",
   },
   headline: "Hi, my name is Phil Tran — aspiring Frontend Developer",
@@ -65,7 +65,7 @@ const homePage: HomePage = {
     {
       name: "Git Hub",
       icon: Github,
-      link: "https://trongquyet.com",
+      link: "https://github.com/Philip-Tran/",
     },
     {
       name: "Linkedin",
@@ -83,7 +83,7 @@ const homePage: HomePage = {
 
 const projects: Project[] = [
   {
-    title: "Joy Read - Language Learning tool",
+    title: "Joy Read - Language Learning tool - VueJs, Express, TailwindCSS",
     isFeatured: true,
     featureImage: "/images/project/project-joyread-01.png",
     slug: "joy-read",
@@ -158,7 +158,7 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Phil Blog - Blogging App with full CMS for minimalistic blogger",
+    title: "Blogging App with full CMS for minimalistic blogger - VueJs",
     brief:
       "Blogging platform with clean interface, full functionality text editor, just share your words",
     featureImage: "/images/project/project-blogcms-01.png",
@@ -217,11 +217,11 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Portfolio site",
+    title: "Portfolio site - VueJs, Nuxt",
     brief: "My own portfolio site build with VueJs, Nuxt",
-    featureImage: "/images/project/project-chungsport-03.png",
+    featureImage: "/images/project/project-portfolio.png",
     keyFeatures: [
-      "Static site, host every where for free",
+      "Static site, deploy everywhere for free",
       "Fully responsive",
       "Static content management system inspired by Nuxt Content",
     ],
@@ -239,22 +239,7 @@ const projects: Project[] = [
     ],
     screenShots: [
       {
-        url: "/images/project/blogcms-2.png",
-        descriptionText: "Home screen",
-        altText: "",
-      },
-      {
-        url: "/images/project/blogcms.png",
-        descriptionText: "Home screen",
-        altText: "",
-      },
-      {
-        url: "/images/project/blogcms-2.png",
-        descriptionText: "Home screen",
-        altText: "",
-      },
-      {
-        url: "/images/project/blogcms.png",
+        url: "/images/project/project-portfolio.png",
         descriptionText: "Home screen",
         altText: "",
       },
@@ -345,7 +330,7 @@ const projects: Project[] = [
     ],
     description:
       "I built this app first for personal use, cause I've always wanted to publish my own content. Build with Brick Builder on WordPress with performance in mind and a lot of custom Javascript and Scss code",
-    isFeatured: false,
+    isFeatured: true,
     slug: "wordpress-qtube",
     linkLive: "https://ticket-mern.vercel.app/",
     repoLink: "https://github.com/Philip-Tran/ticket-mevn",

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AppData } from '~/lib/app';
+import { AppData, Profile } from '~/lib/app';
 import { projects } from '~/lib/content';
 useHead({
     title: `Projects`
@@ -8,7 +8,13 @@ useHead({
 </script>
 
 <template>
-    <SharedAppSection title="Projects">
+    <SharedAppSection title="Projects" description="">
+        <div>
+            <p class="text-text">Notable works of mine. See all the code at
+                <a class="text-orange-500 hover:text-orange-400" :href="Profile.github.link" target="_blank">my
+                    GitHub</a>
+            </p>
+        </div>
         <div
             class="flex flex-col space-y-8 lg:grid lg:grid-flow-row lg:grid-cols-2 lg:space-x-0 lg:space-y-0 lg:gap-9 xl:gap-10 2xl:gap-y-14 2xl:gap-x-12">
             <SharedProjectCard v-for="project in projects" :key="project.slug" :project="project" />
@@ -20,5 +26,4 @@ useHead({
             </NuxtLink>
         </div>
     </SharedAppSection>
-
 </template>
