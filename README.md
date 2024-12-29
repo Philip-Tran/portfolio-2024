@@ -1,10 +1,12 @@
 # Personal Portfolio site
 
-A asthestic looking portfolio site, design inspired by [Kevin Bhagat](https://kevinbhagat.com/)
+An aesthetic looking portfolio site
 
 Website này được mình phát triển sử dụng VueJs, Nuxt, content được render qua static file. Styling sử dụng Tailwind CSS
 
 Đây là website mình show các projects mình từng làm
+
+Link live website: [here](https://phil-tran-dev.vercel.app/)
 
 ## Note: Phần thiết kế của website này thuộc về [Kevin Bhagat](https://kevinbhagat.com/)
 
