@@ -1,75 +1,21 @@
-# Nuxt Minimal Starter
+# Personal Portfolio site
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A asthestic looking portfolio site, design inspired by [Kevin Bhagat](https://kevinbhagat.com/)
 
-## Setup
+Website này được mình phát triển sử dụng VueJs, Nuxt, content được render qua static file. Styling sử dụng Tailwind CSS
 
-Make sure to install dependencies:
+Đây là website mình show các projects mình từng làm
 
-```bash
-# npm
-npm install
+## Note: Phần thiết kế của website này thuộc về [Kevin Bhagat](https://kevinbhagat.com/)
 
-# pnpm
-pnpm install
+## screen
 
-# yarn
-yarn install
+- Home screen
+  ![Home](https://phil-tran-dev.vercel.app/_vercel/image?url=%2Fimages%2Fproject%2Fproject-portfolio.png&w=1536&q=100)
 
-# bun
-bun install
-```
+## Công nghệ sử dụng
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- VueJs
+- Nuxt
+- Tailwind CSS
+- JavaScript & TypeScript
