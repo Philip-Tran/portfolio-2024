@@ -13,7 +13,7 @@ onBeforeMount(() => {
 <template>
     <div>
         <SharedAppSection>
-            <div>
+            <div class="-mt-4 lg:-mt-2">
                 <NuxtLink to="/projects">
                     <Button
                         class="text-gray-400 px-0 hover:text-orange-500 transition-all duration-600 bg-transparent hover:bg-transparent"

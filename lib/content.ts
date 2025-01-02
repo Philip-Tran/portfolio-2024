@@ -55,7 +55,7 @@ export interface Project {
 
 const homePage: HomePage = {
   image: {
-    url: "/images/image-me.png",
+    url: "/images/avatar-2.jpg",
     altText: "Phil Tran",
   },
   headline: "Hi, my name is Phil Tran — aspiring Frontend Developer",
@@ -83,7 +83,8 @@ const homePage: HomePage = {
 
 const projects: Project[] = [
   {
-    title: "Joy Read - Language Learning tool - VueJs, Express, TailwindCSS",
+    title:
+      "Joy Read - Language Learning tool | FullStack VueJs, Express, TailwindCSS",
     isFeatured: true,
     featureImage: "/images/project/project-joyread-01.png",
     slug: "joy-read",
@@ -158,7 +159,7 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Blogging App with full CMS for minimalistic blogger - VueJs",
+    title: "Blogging App with full CMS for minimalistic blogger | VueJs & Nuxt",
     brief:
       "Blogging platform with clean interface, full functionality text editor, just share your words",
     featureImage: "/images/project/project-blogcms-01.png",
@@ -217,7 +218,7 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Portfolio site - VueJs, Nuxt",
+    title: "Portfolio site | VueJs, Nuxt",
     brief: "My own portfolio site build with VueJs, Nuxt",
     featureImage: "/images/project/project-portfolio.png",
     keyFeatures: [
@@ -319,7 +320,7 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "QTube - Youtube inspired video publishing platform",
+    title: "QTube - Youtube inspired video publishing platform | WordPress",
     brief:
       "Publish your own video, podcast and writing all in one place with easy to use CMS, allow comment for authenticated user and more",
     featureImage: "/images/project/project-q-tube-01.png",

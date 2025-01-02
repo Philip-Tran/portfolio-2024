@@ -7,7 +7,7 @@ import { Command, Component } from "lucide-vue-next"
     <div class="w-full min-h-10 text-text flex">
       <div
         class="items-center flex flex-col lg:flex-row lg:space-x-5 xl:space-x-6 2xl:space-x-7 self-center mx-auto justify-start space-y-2 lg:space-y-0">
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center flex-col sm:flex-row space-x-2">
           <p class="text-text ">This site is built with</p>
           <div class="flex space-x-2 xl:space-x-4 items-center text-base">
             <span>VueJs, Nuxt, Tailwind CSS</span>

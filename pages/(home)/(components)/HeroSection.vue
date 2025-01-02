@@ -19,8 +19,8 @@ defineProps<{
         <div class="space-y-5 lg:space-y-6 xl:space-y-10 2xl:space-y-12 ">
             <div class="flex justify-between items-start">
                 <div class="w-32 h-32 rounded-md">
-                    <NuxtImg :src="homePage.image.url" :alt="homePage.image.altText" height="150px" width="150px"
-                        placeholder class="rounded-[2px]" />
+                    <NuxtImg :src="homePage.image.url" :alt="homePage.image.altText" placeholder
+                        class="rounded-[2px]" />
                 </div>
                 <div>
                     <NuxtLink to="/contact">
