@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { ExternalLink } from 'lucide-vue-next';
 import type { Project } from '~/lib/content';
+import { useMediaQuery } from '@vueuse/core'
+
+const isSmallScreen = useMediaQuery('(max-width: 700px)')
+
+console.log(isSmallScreen.value)
 defineProps<{
     project: Project
 }>()
@@ -15,20 +20,20 @@ defineProps<{
                 <!-- Overlay with buttons -->
                 <div
                     class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
-                    <div
+                    <div v-if="!isSmallScreen"
                         class="absolute z-50 top-[62%] w-full transform translate-y-full group-hover:translate-y-3/4 transition-transform duration-300 flex justify-center gap-4 p-4">
                         <NuxtLink :to="`/projects/${project.slug}`">
                             <Button class="rounded-full transition-colors">
                                 Detail
                             </Button>
                         </NuxtLink>
-                        <NuxtLink :to="project.repoLink" external target="_blank">
+                        <NuxtLink v-if="project.repoLink" :to="project.repoLink" external target="_blank">
                             <Button @click.stop class="rounded-full z-[1000]  transition-colors">
                                 Github Repo
                                 <ExternalLink />
                             </Button>
                         </NuxtLink>
-                        <NuxtLink :to="project.linkLive" external target="_blank">
+                        <NuxtLink v-if="project.linkLive" :to="project.linkLive" external target="_blank">
                             <Button @click.stop class="rounded-full  0 transition-colors">
                                 Link Live
                                 <ExternalLink />
