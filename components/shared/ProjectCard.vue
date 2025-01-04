@@ -5,23 +5,22 @@ import { useMediaQuery } from '@vueuse/core'
 
 const isSmallScreen = useMediaQuery('(max-width: 700px)')
 
-console.log(isSmallScreen.value)
 defineProps<{
     project: Project
 }>()
 </script>
 
 <template>
-    <NuxtLink :to="`/projects/${project.slug}`">
+    <div class="relative w-full">
         <div class="space-y-2 lg:space-y-5 hover:text-orange-500">
             <div class="w-full relative group aspect-video">
+                <NuxtLink :to="`/projects/${project.slug}`" class="absolute inset-0 z-50" />
                 <NuxtImg :src="project.featureImage" class="object-cover rounded-lg w-full h-full " placeholder />
-
                 <!-- Overlay with buttons -->
                 <div
                     class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
                     <div v-if="!isSmallScreen"
-                        class="absolute z-50 top-[62%] w-full transform translate-y-full group-hover:translate-y-3/4 transition-transform duration-300 flex justify-center gap-4 p-4">
+                        class="absolute z-50 top-[45%] sm:top-[50%] md:top-[53%] xl:top-[62%] w-full transform translate-y-full group-hover:translate-y-3/4 transition-transform duration-300 flex justify-center gap-4 p-4">
                         <NuxtLink :to="`/projects/${project.slug}`">
                             <Button class="rounded-full transition-colors">
                                 Detail
@@ -55,5 +54,5 @@ defineProps<{
                 </NuxtLink>
             </div>
         </div>
-    </NuxtLink>
+    </div>
 </template>
