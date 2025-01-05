@@ -1,6 +1,6 @@
 export const AppData = {
   logo_text: "Philip Tran",
-  brief_description: "Frontend Developer",
+  brief_description: "Frontend Developer - Content Creator",
   meta_description: "",
 };
 
