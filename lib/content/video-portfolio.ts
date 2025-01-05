@@ -30,7 +30,7 @@ const videos: Video[] = [
     featureImage: "",
 
     featureVideo: "",
-    youtubeUrl: ["https://youtu.be/6eZhv5pNs2w"],
+    youtubeUrl: ["https://youtu.be/7F8jGAfktDU"],
     brief: "",
     description: "",
     tools: [Tools.DavinciResolveStudio, Tools.Illustrator],
